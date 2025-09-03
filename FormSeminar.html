@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Seminar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+      color: blue;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    button {
+      background-color: skyblue;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulir Pendaftaran Seminar Online</h1>
+
+  <form method="post">
+    <label for="nama">Nama Lengkap:</label>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+
+    <label for="telepon">Nomor Telepon:</label>
+    <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" required>
+
+    <label for="sesi">Pilih Sesi Seminar:</label>
+    <select id="sesi" name="sesi" required>
+      <option value="">-- Pilih Sesi --</option>
+      <option value="sesi1">Sesi 1: Cryptocurrency and Stock Option</option>
+      <option value="sesi2">Sesi 2: Attention adalah penghasil uang di zaman sekarang</option>
+      <option value="sesi3">Sesi 3: Tips mendapatkan pasangan</option>
+      <option value="sesi4">Sesi 4: Political Engineering</option>
+    </select>
+
+    <label for="komentar">Komentar / Pertanyaan:</label>
+    <textarea id="komentar" name="komentar" rows="4" placeholder="Tulis komentar atau pertanyaan Anda..."></textarea>
+
+    <button type="submit">Daftar</button>
+  </form>
+</body>
+</html>
